@@ -3,7 +3,7 @@ Tarihteki Şifreleme Yöntemleri
 
 Tarihte binlerce yıldan bu yana belirli zaman aralıklarında sayısız şifreleme yöntemi kullanılmıştır.Bu yöntemlerin birçoğu kullanıldığı dönemlerde kırılamayan yöntemler olarak nitelendirilmiş olmasına rağmen zaman içerisinde kendilerine duyulan güveni yitirerek tarih içerisinde yerlerini almışlardır.Genel olarak inceleyecek olursak tarihteki şifreleme yöntemlerinin çoğunun ortak özelliği simetrik olmasıdır.Yani hem şifreleme hem de şifre çözme işlemlerinde kullanılan anahtar değerinin aynı olmasıdır.Bu nedenle günümüz simetrik şifreleme yöntemlerinin sahip olması gereken güvenli anahtar değişimi işleminin tarihsel süreçte geçmiş yöntemler için de geçerli oldugunu bilmek gerekir.
 
-Bu kısım günümüze kadar ulaşmış olan ve genellikle zamanında yaygın kullanıma sahip olmuş yöntemlerden bazılarını içerir.Yöntemler hakkında teknik bilgilerin yanı sıra Java programlama dilini kullanarak algoritma yapılarına değeneceğiz.
+Bu kısım günümüze kadar ulaşmış olan, genellikle zamanında yaygın kullanıma sahip olmuş yöntemlerden bazılarını ve yöntemler hakkında teknik bilgilerin yanı sıra Java programlama dilini kullanarak algoritma yapılarını içerir.
 
 ## Polybius Şifreleme Yöntemi
 
@@ -28,5 +28,3 @@ Affine şifreleme mono alfabetik yerine koymalı şifreleme yöntemlerinin bir �
 Çok alfabeli şifrelemenin basit bir formu olan Vigenere şifreleme, tek alfabeli kaydırma ve yerine koyma şifreleme yöntemlerine dayanan Sezar şifreleme algoritmasının geliştirilmiş bir halidir.Sezar şifrelemede kaydırma ve yerine koyma işlemleri için sadece bir alfabe kullanılırken, Vigenere şifrelemede birden fazla alfabe kullanılır. Böylece şifrelenecek mesajdaki aynı harflerin şifrelenmesi sonucundan farklı harfler ortaya çıkar. Bu durum Vigenere yöntemini Sezar yötemine göre daha güçlü kılar ve yapısının kırılmasını zorlaştırır.
 
 Şifreleme yönteminde öncelikle şifreleme işlemi sırasında kullanılacak anahtar seçilir. Şifrelenecek mesajın harf sayısı anahtar boyutundan büyük ise anahtar tekrar tekrar kullanılabilir. Şifrelenecek mesajın ilk harfi, anahtar değerinin ilk harfinden alfabedeki sırası oranında kaydırılır ve şifreli harf elde edilir. Anahtar değerinin her harfinin sırasına göre şifrelenecek mesajdaki her harf farklı bir alfabe ile şifrelenir ve şifreleme işlemi tamamlanır.
-
-
