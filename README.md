@@ -3,7 +3,7 @@ Tarihteki Şifreleme Yöntemleri
 
 Tarihte binlerce yıldan bu yana belirli zaman aralıklarında sayısız şifreleme yöntemi kullanılmıştır.Bu yöntemlerin birçoğu kullanıldığı dönemlerde kırılamayan yöntemler olarak nitelendirilmiş olmasına rağmen zaman içerisinde kendilerine duyulan güveni yitirerek tarih içerisinde yerlerini almışlardır.Genel olarak inceleyecek olursak tarihteki şifreleme yöntemlerinin çoğunun ortak özelliği simetrik olmasıdır.Yani hem şifreleme hem de şifre çözme işlemlerinde kullanılan anahtar değerinin aynı olmasıdır.Bu nedenle günümüz simetrik şifreleme yöntemlerinin sahip olması gereken güvenli anahtar değişimi işleminin tarihsel süreçte geçmiş yöntemler için de geçerli oldugunu bilmek gerekir.
 
-Bu kısım günümüze kadar ulaşmış olan, genellikle zamanında yaygın kullanıma sahip olmuş yöntemlerden bazılarını ve yöntemler hakkında teknik bilgilerin yanı sıra Java programlama dilini kullanarak algoritma yapılarını içerir.
+Bu kısım günümüze kadar ulaşmış olan, genellikle zamanında yaygın kullanıma sahip olmuş yöntemlerden bazılarını ve yöntemler hakkında teknik bilgilerin yanı sıra Java programlama dilini kullanarak yazılmış algoritma yapılarını içerir.
 
 ## Polybius Şifreleme Yöntemi
 
@@ -42,3 +42,14 @@ Yöntem, İngiliz alfabe yapısına göre şifreleme yapmak için 5x5'lik bir ma
    3. İkili bloklar halinde alınan harfler ne aynı satırda ne de aynı sütunda ise harfler birer dikdörtgen köşesi gibi düşünülür ve o       harflerin köşelerine karşılık gelen ters köşeler alınır.
 
 Şifre çözme işlemi için bu adımlar tersten uygulanır.
+
+## Bifid Şifreleme Yöntemi
+
+1901 yılında ünlü Fransız kriptograf Felix Delastelle tarafından geliştirilmiş bir blok şifreleme yöntemidir. Felix Delastelle aynı zamanda Trifid ve Four-square şifrelemeyi de geliştirmiştir.
+
+Bifid şifreleme yöntemi şifreleme ve şifre çözme işlemlerinde Polybius dama tahtasını kullanır. Polybius dama tahtası bir matristir. Şifreli mesajın her bir harfi bu matris yardımıyla bir çift sayısal ifadeye dönüştürülür. Anahtar değeri kullanılan alfabe matrisinin kendisidir, bu nedenle mesajlaşacak taraflarda aynı alfabe matrisinin bulunması gerekir. Bifid şifreleme yöntemi için alfabedeki harf sayısına göre en uygun boyutta bir kare matris kullanılmalıdır.
+
+Dikkat edilmesi gereken şeylerden biri soldan sağa ikili okumada sorun yaşanmaması için şifrelenecek mesajın ikinin katı uzunluğunda olması gerektiğidir. İkinin katı olması için mesaj uzunluğunun modu alınarak kalan sonuç değeri miktarınca mesaj üzerine harf ekleme işlemi yapılabilir.
+
+Şifre çözme işlemi şifrelemenin tam tersidir. Bu işlemde şifreli mesaj harflerine ayrılarak her harfin adres değeri çıkartılır ve bu değerler iki satırlı matris üzerine soldan sağa dogru yazlarak yerleştirlir. Ardından her sütun değeri yukarıdan aşağıya okunarak açık mesajın adres değerleri elde edilir. Bu adreslerde bulunan harfler birleştirilerek açık mesaj ele edilir.
+
