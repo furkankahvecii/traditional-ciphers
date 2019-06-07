@@ -62,3 +62,19 @@ Fransız kriptograf Felix Delastelle tarafından geliştirilmiş bir blok şifre
 Bu noktada dikkat edilmesi gereken şey soldan sağa üçerli okumada sorun yaşanmaması için şifrelenecek mesajın üçün katı uzunluğunda olması gerektiğidir. Üçün katı olması için mesaj uzunluğunun modu alınarak kalan sonuç değeri miktarınca mesaj üzerine harf ekleme işlemi yapılabilir.
 
 Şifre çözme işlemi Bifid şifreleme yönteminde olduğu gibi şifreleme işleminin tam tersidir. Bu işlemde şifreli mesaj harflerine ayrılarak her harfin adres değeri çıkartılır ve bu değerler üç satırlı matris üzerine soldan sağa doğru yazılarak yerleştirilir. Ardından her sütun değeri yukarıdan aşagıya okunarak açık mesaj harflerinin adres değerleri elde edilir. Bu adreslerde bulunan harfler birleştirilerek açık mesaj elde edilir.
+
+## Vernam Şifreleme Yöntemi
+
+Amerikan Telefon ve Telgraf şirketinde mühendis olarak çalışan Gilbert Vernam 1.Dünya Savaşı sırasında Almanların çözemeyeceği bir şifreleme metodunu icat etmekle görevlendirilmişti. Bu görevi yerine getirmek üzere Gilbert Vernam, Joseph Mauborgne isimli bir subay ile birlikte 1917 yılında bir şifreleme yöntemi geliştirdiler.
+
+Vernam adı verdikleri dizi şifreleme yönteminde açık mesajı şifrelemek için mesaj ile aynı uzunlukta ya da mesajdna daha uzun bir anahtar(tek kullanımlık şerit) kullanılır.
+
+Sistemin güvenliği rastgele üretilen anahtar değerine bağlıdır.Anahtar her seferinde yeniden üretildiği, bir kereye mahsus kullanıldığı,kısmen ya da tamamen tekrar kullanılmadığı ve gizli tutulduğu takdirde bu şifrele yöntemini kırmanın imkansız olduğu kanıtlanmıştır.
+
+Vernam şifreleme birçok şifreleme yöntemiyle karşılaştırıldığında oldukça basittir.Açık mesaj içinde yer alan her karakter, üretilen anahtarda karşısına denk gelen karakterle XOR(özel veya) işlemine sokularak şifreli mesaj elde edilir.
+
+Şifreli Metin = Açık Metin ^ Anahtar ( ^ = XOR)
+
+Mesajı çözmek için rastgele anahtarın bilinmesi yani gönderici tarafa açık mesajı şifrelemede kullanılan anahtar değerinin alıcı tarafta da bulunması gerekir. Bu nedenle hem gönderici hem alıcı tarafta olmak üzere anahtar değerinin iki kopyasına ihtiyaç vardır.Şifreli mesaj içinde yer alan her karakter, anahtarda karşısına denk gelen karakterle yeniden XOR işlemine sokulduğunda açık mesaj elde edilir.
+
+Açık Metin = Şifreli Metin ^ Anahtar  
