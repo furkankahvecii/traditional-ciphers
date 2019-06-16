@@ -91,5 +91,5 @@ Kullanılacak anahtar matrisin mod sayısına göre terslenebilen bir matris olm
 
 Alıcı tarafa şifre çözme işlemi için öncelikle anahtar matris değerinin tersinin alınması gerekir. Bu işlemin ardından şifreli mesaj, ikili bloklar halinde anahtar değerinin tersi ile çarpma işlemine tabi tutulur.Çıkan sonuç değeri 26’dan büyük ise mod alınır.Bulunan sonuç değerlerinin harf tablosundaki karşılıkları bize açık mesajı verir.
 
-Açık Metin = (Açık Metin x Anahtar Matrisinin Tersi) Mod 26
+Açık Metin = (Şifreli Metin x Anahtar Matrisinin Tersi) Mod 26
  
