@@ -67,7 +67,7 @@ Bu noktada dikkat edilmesi gereken şey soldan sağa üçerli okumada sorun yaş
 
 Amerikan Telefon ve Telgraf şirketinde mühendis olarak çalışan Gilbert Vernam 1.Dünya Savaşı sırasında Almanların çözemeyeceği bir şifreleme metodunu icat etmekle görevlendirilmişti. Bu görevi yerine getirmek üzere Gilbert Vernam, Joseph Mauborgne isimli bir subay ile birlikte 1917 yılında bir şifreleme yöntemi geliştirdiler.
 
-Vernam adı verdikleri dizi şifreleme yönteminde açık mesajı şifrelemek için mesaj ile aynı uzunlukta ya da mesajdna daha uzun bir anahtar(tek kullanımlık şerit) kullanılır.
+Vernam adı verdikleri dizi şifreleme yönteminde açık mesajı şifrelemek için mesaj ile aynı uzunlukta ya da mesajdan daha uzun bir anahtar(tek kullanımlık şerit) kullanılır.
 
 Sistemin güvenliği rastgele üretilen anahtar değerine bağlıdır.Anahtar her seferinde yeniden üretildiği, bir kereye mahsus kullanıldığı,kısmen ya da tamamen tekrar kullanılmadığı ve gizli tutulduğu takdirde bu şifrele yöntemini kırmanın imkansız olduğu kanıtlanmıştır.
 
