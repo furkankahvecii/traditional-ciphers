@@ -1,0 +1,5 @@
+## Vigenere Şifreleme Yöntemi
+
+Çok alfabeli şifrelemenin basit bir formu olan Vigenere şifreleme, tek alfabeli kaydırma ve yerine koyma şifreleme yöntemlerine dayanan Sezar şifreleme algoritmasının geliştirilmiş bir halidir.Sezar şifrelemede kaydırma ve yerine koyma işlemleri için sadece bir alfabe kullanılırken, Vigenere şifrelemede birden fazla alfabe kullanılır. Böylece şifrelenecek mesajdaki aynı harflerin şifrelenmesi sonucundan farklı harfler ortaya çıkar. Bu durum Vigenere yöntemini Sezar yötemine göre daha güçlü kılar ve yapısının kırılmasını zorlaştırır.
+
+Şifreleme yönteminde öncelikle şifreleme işlemi sırasında kullanılacak anahtar seçilir. Şifrelenecek mesajın harf sayısı anahtar boyutundan büyük ise anahtar tekrar tekrar kullanılabilir. Şifrelenecek mesajın ilk harfi, anahtar değerinin ilk harfinden alfabedeki sırası oranında kaydırılır ve şifreli harf elde edilir. Anahtar değerinin her harfinin sırasına göre şifrelenecek mesajdaki her harf farklı bir alfabe ile şifrelenir ve şifreleme işlemi tamamlanır.
